@@ -51,8 +51,8 @@ Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için Djan
 
 ## Uygulama Arayüzü
 ### - Anasayfa
-![Uygulama](İmages/Resim1.png)
+![Uygulama](İmages/1.png)
 ### -İntihal Tespit
-![Uygulama](İmages/Resim2.png)
+![Uygulama](İmages/2.png)
 ### -Hakkımızda
-![Uygulama](İmages/Resim3.png)
+![Uygulama](İmages/3.png)
