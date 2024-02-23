@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>İntihal Tespit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #333; /* Dark grey text color */
+
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .content {
+            text-align: center;
+            margin-top: 30px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .result h2 {
+            color: #333;
+        }
+        .result p {
+            color: #555;
+        }
+        .icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .green {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .red {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .feature-image{
+            max-width: 800px;
+            height: 800px;
+            border-radius: 10px;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            background-color: #343a40; /* Dark footer background */
+            color: #fff; /* White text */
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                const textarea = document.getElementById('text');
+                if (!textarea.value.trim()) {
+                    // If text area is empty, prevent form submission
+                    event.preventDefault();
+                    // Show alert message
+                    alert('Lütfen metin girişi yapınız.');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="/intihal_tespit/">İntihal Tespit</a></li>
+            <li><a href="/hakkımızda/">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>İntihal Tespit</h1>
+        <div class="content">
+            <center>
+                <img src="{% static '_07077602-1011-48ea-af16-adbe67cf2c20.jpeg' %}" alt="Özellik Resmi" class="feature-image">
+            </center>
+            <form method="post">
+                {% csrf_token %}
+                <textarea id="text" name="text" placeholder="Metin giriniz...">{{ text }}</textarea>
+                <button type="submit">Intihal Tespit Et</button>
+            </form>
+
+            {% if predictions is not None %}
+            <div class="result">
+                <h2>Tespit Sonucu</h2>
+                {% if predictions == 1 %}
+                <div class="icon green">&#10004;</div>
+                <p>Bu metin yapay zeka tarafından yazılmıştır.</p>
+                {% else %}
+                <div class="icon red">&#10006;</div>
+                <p>İntihal Tespit Edilmedi</p>
+                {% endif %}
+            </div>
+            {% else %}
+            <div class="result">
+                <p>Tahmin işlemini gerçekleştiriniz</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="footer">
+        <p style="color:red">Benimle bağlantıya geçin:</p>
+        <a href="https://www.linkedin.com/in/hasan-can-%C3%A7elik-46950623b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/HasanCan6241" target="_blank">GitHub</a>
+    </div>
+</body>
+</html>

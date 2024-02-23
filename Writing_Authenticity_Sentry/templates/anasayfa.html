@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light grey background */
+            color: #333; /* Dark grey text color */
+        }
+
+        nav {
+            background-color: #343a40; /* Dark navbar */
+            color: #fff; /* White text */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White container background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            background-color: #343a40; /* Dark footer background */
+            color: #fff; /* White text */
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Card Styles */
+        .card {
+            margin-bottom: 20px;
+            border: none; /* Remove card borders */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+            background-color: #fff; /* White card background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Jumbotron Styles */
+        .jumbotron {
+            background-color: #f8f9fa; /* Light jumbotron background */
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        .jumbotron h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333; /* Dark grey heading */
+            text-align: center;
+        }
+
+        .jumbotron p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555; /* Medium grey text */
+            text-align: center;
+        }
+
+        .jumbotron .btn-success {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        .feature-image {
+            max-width: 800px;
+            height: 800px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="intihal_tespit">İntihal Tespit</a></li>
+            <li><a href="hakkımızda">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>İntihal Tespit</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h4 class="card-title">Kolay Arayüz / Hızlı Sonuç</h4>
+                    <p class="card-text">Kolay kullanımlı ara yüzü ile 3 adımda intihal tespiti yapabilir, derhal rapora kavuşabilirsiniz.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h4 class="card-title">Özgün Mimari</h4>
+                    <p class="card-text">Tez ve akademik makalelerde intihal yasal bir suçtur. Kimse bu suçun danışmanı, editörü veya ev sahibi olmak istemez.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h4 class="card-title">Geniş Kapsam</h4>
+                    <p class="card-text">Türkiye'de yayın yapan dergilerin %90'ından fazlasını ve on binlerce basılı kitabın kapsadığını biliyor muydunuz?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>İntihal Tespit Yazılımı</h1>
+            <p class="mt-4">İntihal yapmak başkasının yayınının kurallara ve etiğe aykırı şekilde alınması ve kullanılmasıdır. İntihal yapıldığında çalışmanın özgünlüğü bozulur.</p>
+            <p>İntihal sitemiz birçok intihal tipini tespit etmek için özelleşmiş yapay zeka tabanlı bir intihal tespit yazılımıdır.</p>
+            <p class="mt-4">
+                <button><a href="/intihal_tespit/" style="color:white">Sayfayı Görüntüle</a></button>
+            </p>
+            <center>
+                <img src="{% static '_c7c1516b-91cb-48e7-b4ff-6401a1ab5a46.jpeg' %}" alt="Özellik Resmi" class="feature-image">
+            </center>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="color:red">Benimle bağlantıya geçin:</p>
+        <a href="https://www.linkedin.com/in/hasan-can-%C3%A7elik-46950623b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/HasanCan6241" target="_blank">GitHub</a>
+    </div>
+</body>
+</html>
