@@ -38,13 +38,8 @@ Bu proje aynı zamanda yapay zeka sistemlerinin geliştirilmesine de katkıda bu
 - WordNetLemmatizer
 - word_tokenize
 
-## Kullanım
-
-Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için Django projesini kurun ve gerekli kütüphaneleri yükleyin. Daha sonra proje dosyalarını çalıştırarak kullanmaya başlayabilirsiniz.
-
-
 ## 📂 Nasıl Kullanılır?
-
+Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için;
 1. Proje dosyalarını klonlayın veya indirin.
 2. Gerekli bağımlılıkları yükleyin.
 3. Uygulamayı başlatmak için gereken adımları izleyin.
