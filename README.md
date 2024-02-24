@@ -1,6 +1,6 @@
 # İntihal Tespit Projesi
 
-Bu proje, insanlar tarafından üretilmiş içerikler ile yapay zeka (AI) tarafından üretilmiş içerikler arasındaki farkı belirlemek ve intihal durumlarını tespit etmek için geliştirilmiş bir sistemdir.
+Bu proje, insanlar tarafından üretilmiş makaleler ile yapay zeka (AI) tarafından üretilmiş makaleler arasındaki farkı belirlemek ve intihal durumlarını tespit etmek için geliştirilmiş bir sistemdir. Dikkat edilmesi gereken, intihali tespit makaleler ingilizce formatta olmalıdır.
 
 ## 🚀 Proje Amaçları
 
