@@ -24,6 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.anasayfa, name='anasayfa'),
     path('intihal_tespit/',views.intihal_tespit, name='intihal_tespit'),
-    path('hakkımızda/',views.hakkımızda,name='hakkımızda'),
-
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

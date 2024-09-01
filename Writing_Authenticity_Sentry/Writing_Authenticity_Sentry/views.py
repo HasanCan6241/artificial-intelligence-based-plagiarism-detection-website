@@ -5,15 +5,23 @@ from django.shortcuts import render
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+import warnings
+from sklearn.exceptions import ConvergenceWarning
+import os
+
+warnings.filterwarnings("ignore", category=UserWarning, module='sklearn')
 
 def anasayfa(request):
     return render(request, 'anasayfa.html')
 
 
+
 with open('logistic_regression_model.pkl', 'rb') as file:
     loaded_model = pickle.load(file)
+
 with open('vectorizer.pkl', 'rb') as file:
     loaded_vectorizer = pickle.load(file)
+
 
 def intihal_tespit(request):
     if request.method == 'POST':
@@ -40,5 +48,3 @@ def intihal_tespit(request):
 
     return render(request, 'intihal_tespit.html')
 
-def hakkımızda(reguest):
-        return render(reguest,'hakkımızda.html')
