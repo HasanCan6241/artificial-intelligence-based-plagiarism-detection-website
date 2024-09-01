@@ -1,6 +1,6 @@
 # İntihal Tespit Projesi
 
-Bu proje, insanlar tarafından üretilmiş içerikler ile yapay zeka (AI) tarafından üretilmiş içerikler arasındaki farkı belirlemek ve intihal durumlarını tespit etmek için geliştirilmiş bir sistemdir.
+Bu proje, insanlar tarafından üretilmiş makaleler ile yapay zeka (AI) tarafından üretilmiş makaleler arasındaki farkı belirlemek ve intihal durumlarını tespit etmek için geliştirilmiş bir sistemdir. Dikkat edilmesi gereken, intihali tespit makaleler ingilizce formatta olmalıdır.
 
 ## 🚀 Proje Amaçları
 
@@ -38,21 +38,16 @@ Bu proje aynı zamanda yapay zeka sistemlerinin geliştirilmesine de katkıda bu
 - WordNetLemmatizer
 - word_tokenize
 
-## Kullanım
-
-Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için Django projesini kurun ve gerekli kütüphaneleri yükleyin. Daha sonra proje dosyalarını çalıştırarak kullanmaya başlayabilirsiniz.
-
-
 ## 📂 Nasıl Kullanılır?
-
+Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için;
 1. Proje dosyalarını klonlayın veya indirin.
 2. Gerekli bağımlılıkları yükleyin.
 3. Uygulamayı başlatmak için gereken adımları izleyin.
 
 ## Uygulama Arayüzü
 ### - Anasayfa
-![Uygulama](İmages/Resim1.png)
+![Uygulama](images/1.png)
 ### -İntihal Tespit
-![Uygulama](İmages/Resim2.png)
+![Uygulama](images/2.png)
 ### -Hakkımızda
-![Uygulama](İmages/Resim3.png)
+![Uygulama](images/3.png)
