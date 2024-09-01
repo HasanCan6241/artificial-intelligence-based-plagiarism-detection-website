@@ -10,24 +10,22 @@ Sahtekarlık ve manipülasyonun önlenmesi, güvenilirlik ve doğruluk, etik kur
 
 - **Anasayfa:** Projenin amacı, sağladığı faydalar, kullanım alanları gibi genel bilgiler.
 - **İntihak Tespit:** Girilen makale metninin sınıflandırılmasını yapar.
-- **Hakkımızda:** Projeye dair detaylı bilgiler.
-
+  
 ### Sahtekarlık ve Manipülasyonun Önlenmesi
 
-Yapay zeka tarafından üretilen içeriklerin, gerçek insanlar tarafından yazılmış metinlerle neredeyse ayırt edilemez hale gelmesi, sahtekarlık ve manipülasyon risklerini artırır. Bu proje, online platformlarda sahte haberlerin, manipülatif içeriklerin ve yanıltıcı bilgilerin yayılmasını önlemeyi hedefler.
+Yapay zeka tarafından üretilen makaleler, insan tarafından yazılmış metinlerden neredeyse ayırt edilemez hale gelmiştir. Projemiz, bu tür yanıltıcı içeriklerin yayılmasını önlemek ve dijital platformlarda güvenilirliği sağlamak için tasarlanmıştır.
 
 ### Güvenilirlik ve Doğruluk
 
-İnsanlar tarafından yazılmış içerikler genellikle belirli bir güvenilirlik ve kalite seviyesine sahiptir. Bu proje, AI tarafından üretilmiş içeriklerin insanlar tarafından üretilmiş içeriklerden ayırt edilmesi, güvenilir ve doğru bilgiye erişim için önemlidir.
+İnsan tarafından yazılmış makaleler genellikle belirli bir güvenilirlik ve kalite seviyesine sahiptir. Bu proje, AI tarafından üretilen içeriklerin insan yapımı içeriklerden ayırt edilmesine olanak tanır, böylece güvenilir bilgiye erişim sağlanır ve bilgi doğruluğu korunur.
 
 ### Etik Kurallar ve Normlar
 
-Bazı platformlar, AI tarafından üretilen içeriklerin kullanımını belirli etik kurallara ve normlara uygun hale getirmek isteyebilir. Bu proje, etik standartları korumak ve ihlalleri tespit etmek için gereklidir.
+Yapay zeka tarafından üretilen içeriklerin kullanımını etik kurallara ve normlara uygun hale getirmek isteyebilir. Bu proje, etik standartları korumak ve ihlalleri tespit etmek için gereklidir.
 
-### Yapay Zeka Gelişimi ve Sınıflandırma Algoritmalarının İyileştirilmesi
+### Sınıflandırma Algoritmalarının İyileştirilmesi
 
-Bu proje aynı zamanda yapay zeka sistemlerinin geliştirilmesine de katkıda bulunacaktır. AI'ın insanlar tarafından üretilmiş içeriklerden ayırt edilmesi, sınıflandırma algoritmalarının geliştirilmesi için önemli bir test alanı olacaktır.
-
+Yapay zeka tarafından üretilen makalelerin insanlar tarafından yazılmış makalelerden ayırt edilebilmesi, sınıflandırma algoritmalarının geliştirilmesi ve iyileştirilmesi için önemli bir test alanı sunar.
 ## 🛠️ Kullanılan Teknolojiler
 
 - re
@@ -46,8 +44,6 @@ Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için;
 
 ## Uygulama Arayüzü
 ### - Anasayfa
-![Uygulama](images/1.png)
+![Uygulama](images/anasayfa.png)
 ### -İntihal Tespit
-![Uygulama](images/2.png)
-### -Hakkımızda
-![Uygulama](images/3.png)
+![Uygulama](images/intihal_tespit.png)
