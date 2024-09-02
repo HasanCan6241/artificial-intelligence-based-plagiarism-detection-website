@@ -35,6 +35,8 @@ Yapay zeka tarafından üretilen makalelerin insanlar tarafından yazılmış ma
 - stopwords
 - WordNetLemmatizer
 - word_tokenize
+- LogisticRegression
+- TfidfVectorizer
 
 ## 📂 Nasıl Kullanılır?
 Proje Django ile geliştirilmiştir. İlgili kodları çalıştırmak için;
